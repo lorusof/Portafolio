@@ -56,12 +56,12 @@
                         <!-- ETIQUETA DE ALUMNO (Hacer una por cada alumno)-->
                             <img class="img-fluid rounded-circle" width="50px" src="assets/ivan_rr.png" alt="..." />
                             <div class="ms-2">
-                                <div class="fw-bold">Nombre de integrante del equipo</div>
-                                <div class="text-muted">Carrera que estudia</div>
+                                <div class="fw-bold">Iván Rojas Robles</div>
+                                <div class="text-muted">Ingenieria Mecatrónica</div>
                             </div>
                         <!--Aqui termina etiqueta de alumno-->
 
-                        <div class="text-muted fst-italic mt-2 mb-2">Fecha: Mes dia, Año</div>
+                        <div class="text-muted fst-italic mt-2 mb-2">Fecha: Enero 21, 2025</div>
                         <!-- ETIQUETAS O TOPICOS IMPORTANTES DE LA PRACTICA-->
                         <a class="badge bg-primary text-decoration-none link-light" >Arduino</a>
                         <a class="badge bg-primary text-decoration-none link-light" >Electrónica</a>
@@ -74,70 +74,144 @@
             <section>
                 <div class="container px-5">
 
-                    <figure class="mb-4"><img class="img-fluid rounded" width="800px" src="img/web.jpg" alt="..." /></figure>
+                    <figure class="mb-4"><img class="img-fluid rounded" width="800px" src="img/Intro.1.webp" alt="..." /></figure>
                                 
                     <p id="resumen">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Resumen -</h2>
-                        <p class="fs-6 mb-4">Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.</p>
-                        <p class="fs-6 mb-4">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>
+                        <p class="fs-6 mb-4">En esta primera sección vamoa a aprender a como usar el Arduno de forma basica para usos simples, podremos ver como en esta primera sección ocuparemos material que es de facil acceso.
+                        Nuestra primera práctica estuvo enfocada en conocer el uso del Arduino y sus funciones básicas. Comenzamos activando el LED integrado, luego pasamos a controlar un LED externo conectado a la placa. Posteriormente, exploramos el uso de delays para generar un parpadeo con intervalos de un segundo. Finalmente, aplicamos estos conceptos en un ejercicio más avanzado: la implementación de un contador utilizando un display de 7 segmentos.
+                        </p>
                         
                         <p id="intro">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Introducción -</h2>
-                        <p class="fs-6 mb-4">Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.</p>
-                        <p class="fs-6 mb-4">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>
+                        <p class="fs-6 mb-4">Arduino es una compañía de desarrollo de software y hardware libres, así como una comunidad internacional que diseña y manufactura placas de desarrollo de hardware para construir dispositivos digitales y dispositivos interactivos que puedan detectar y controlar objetos del mundo real. Arduino se enfoca en acercar y facilitar el uso de la electrónica y programación de sistemas embebidos en proyectos multidisciplinarios. Los productos que vende la compañía son distribuidos como hardware y software libre, bajo la Licencia Pública General de GNU (GPL) y la Licencia Pública General Reducida de GNU (LGPL), permitiendo la manufactura de las placas Arduino y distribución del software por cualquier individuo.
+                        En este artículo, exploraremos los primeros pasos en el aprendizaje de Arduino, desde la activación de su LED integrado hasta la implementación de un contador en un display de 7 segmentos. A través de estas prácticas, no solo comprendemos el funcionamiento del hardware y el software, sino que también sentamos las bases para desarrollar sistemas más complejos en el futuro.
+                        </p>
                         
                         <p id="materiales">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Materiales -</h2>
-                        <p class="fs-6 mb-4">Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.</p>
-                        <p class="fs-6 mb-4">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>
+                        <p class="fs-6 mb-4">Ejercicio 1: Activación del LED integrado
+
+                            Arduino UNO o equivalente
+                            
+                            Cable USB para conexión a la computadora.
+                        
+                            Ejercicio 2: Control de un LED externo
+
+                            Arduino UNO o equivalente
+                            
+                            LED
+                            
+                            Resistencia de 220 ohms
+                            
+                            Protoboard
+                            
+                            Cables jumper
+
+                            Ejercicio 3: Conteo con display de 7 segmentos
+
+                            Arduino UNO o equivalente
+
+                            Display de 7 segmentos (ánodo o cátodo común, según la configuración)
+
+                            Resistencias de 220 ohms (una por cada segmento del display)
+
+                            Protoboard
+
+                            Cables jumper
+                        </p>
                         
                         <p id="desarrollo">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
-                        <p class="fs-6 mb-4">Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.</p>
-                        <p class="fs-6 mb-4">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>
+                        <p class="fs-6 mb-4">Ejercicio 1: Activación del LED integrado
+                            El primer paso en el aprendizaje de Arduino es familiarizarse con su entorno y funciones básicas. En este ejercicio, utilizamos el LED integrado en la placa para comprobar su funcionamiento y entender la estructura básica de un código en Arduino IDE.
+                            Conectamos la placa Arduino UNO a la computadora mediante un cable USB.
+                            Abrimos el entorno de programación Arduino IDE y escribimos un código simple para encender y apagar el LED con intervalos de tiempo.
+                            Subimos el código a la placa y observamos cómo el LED integrado parpadea según lo programado.
+                            Este ejercicio nos permitió comprender la estructura básica de un programa en Arduino, incluyendo la función setup() para configuraciones iniciales y loop() para la ejecución repetitiva del código.
+                        
+                            Ejercicio 2: Control de un LED externo
+                            Después de trabajar con el LED integrado, el siguiente paso fue aprender a controlar un LED externo conectado a la placa Arduino.
+                            Conectamos un LED a la protoboard y lo vinculamos a un pin digital de Arduino a través de una resistencia de 220 ohms, evitando así el sobreconsumo de corriente.
+                            Escribimos un código para encender y apagar el LED con un delay de un segundo, de manera similar al ejercicio anterior.
+                            Subimos el código a la placa y observamos cómo el LED externo parpadea.
+                            Este ejercicio nos permitió trabajar con salidas digitales y comprender mejor la importancia del uso de resistencias en los circuitos electrónicos.
+                        
+                            Ejercicio 3: Conteo con un Display de 7 segmentos
+                            Para aplicar los conocimientos adquiridos, realizamos un ejercicio más avanzado utilizando un display de 7 segmentos para mostrar un conteo del 0 al 2.
+                            Conectamos el display de 7 segmentos a la protoboard, asegurándonos de identificar correctamente sus pines.
+                            Usamos resistencias de 220 ohms en cada segmento para evitar daños en el display.
+                            Conectamos los pines del display a pines digitales de Arduino, programando la secuencia para mostrar los números del 0 al 2.
+                            Subimos el código a la placa y observamos cómo el display muestra la numeración en orden.
+                            Este ejercicio nos permitió trabajar con múltiples salidas digitales y comprender el funcionamiento de un display de 7 segmentos, sentando las bases para proyectos más complejos de visualización.
+                        </p>
                         
                             <p id="simulacion">
                             <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Simulación</h1>
-                            <p class="fs-6 mb-4">Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.</p>
-                            <p class="fs-6 mb-4">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/ne555.png" alt="..." /></figure>
-                    
-                            <p id="diseño">
-                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Diseño</h1>
-                            <p class="fs-6 mb-4">Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.</p>
-                            <p class="fs-6 mb-4">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>
-                            
-                            <p id="construccion">
-                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Construcción</h1>
-                            <p class="fs-6 mb-4">Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.</p>
-                            <p class="fs-6 mb-4">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>
-                            
+                            <p class="fs-6 mb-4">Ejercicio 1: Activación del LED Integrado
+                                Este ejercicio nos permite conocer la estructura básica de un programa en Arduino y probar su funcionamiento con el LED integrado en la placa.
+                                El código envía una señal al pin del LED integrado (que generalmente es el pin 13) para que se encienda y apague en intervalos de tiempo.
+                                Se usa la función digitalWrite() para controlar el estado del LED (HIGH para encender y LOW para apagar).
+                                La función delay(1000); introduce una pausa de 1 segundo entre cada cambio de estado, lo que hace que el LED parpadee constantemente.
+                                Como el LED está dentro de la placa Arduino, no es necesario ningún componente externo.</p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="200px" src="img/Simula1.png" alt="..." /></figure>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="200px" src="img/Simulación1.png" alt="..." /></figure>
+                            <p class="fs-6 mb-4">Ejercicio 2: Control de un LED Externo
+                                Aquí se aprende a manipular un LED externo mediante Arduino, utilizando un circuito sencillo.
+                                El LED se conecta a un pin digital de Arduino a través de una resistencia de 220 ohms, evitando que reciba demasiada corriente y se dañe.
+                                El código es similar al del LED integrado, pero ahora se usa un pin de salida diferente (por ejemplo, el pin 7).
+                                Se usa digitalWrite(7, HIGH); para encender el LED y digitalWrite(7, LOW); para apagarlo.
+                                Al subir el código, el LED externo parpadea con la misma lógica del ejercicio anterior, pero esta vez el control se realiza desde la conexión con la protoboard..</p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="200px" src="img/simula2.png" alt="..." /></figure>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="200px" src="img/simulación2.png" alt="..." /></figure>
+                            <p class="fs-6 mb-4">Ejercicio 3: Conteo con un Display de 7 Segmentos
+                                En este ejercicio, se utiliza un display de 7 segmentos para mostrar números del 0 al 2, aprendiendo a manejar múltiples salidas digitales.
+                                Cada número en el display se representa encendiendo combinaciones de los segmentos (que son pequeños LEDs organizados en forma de número 8).
+                                Cada segmento del display está conectado a un pin digital de Arduino, con una resistencia de 220 ohms en cada conexión para proteger los LEDs.
+                                En el código, se crea un arreglo de combinaciones de encendido para representar cada número (por ejemplo, el 0 enciende todos los segmentos excepto el del medio).
+                                Se programa un bucle que cambia la combinación de segmentos cada segundo, simulando un contador que avanza automáticamente del 0 al 2.
+                                Una vez que llega al 9, vuelve a empezar desde 0 y repite el proceso.</p>
+                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="200px" src="img/Simula3.png" alt="..." /></figure>
+                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="200px" src="img/Simulación3.png" alt="..." /></figure>
 
                         <p id="resultados">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
-                        <p class="fs-6 mb-4">Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.</p>
-                        <p class="fs-6 mb-4">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>
+                        <p class="fs-6 mb-4">Ejercicio 1: Activación del LED Integrado
+                            Se logró encender y apagar el LED integrado de la placa Arduino en intervalos de 1 segundo.
+                            Se comprendió la estructura básica de un programa en Arduino IDE, incluyendo el uso de las funciones setup() y loop().
+                            Se verificó el correcto funcionamiento del Arduino UNO, confirmando que puede ejecutar instrucciones simples.</p>
                         <figure class="mb-4" align="center"><video width="80%"  controls>
-                            <source src="video/Robot.mp4" type="video/mp4">
+                            <source src="video/resultado1.mp4" type="video/mp4">
+                        </video></p></figure>
+                        <p class="fs-6 mb-4">Ejercicio 2: Control de un LED Externo
+                            Se logró encender y apagar un LED externo conectado a la placa Arduino, demostrando el control de salidas digitales.
+                            Se comprobó la importancia de utilizar resistencias para evitar daños en los componentes electrónicos.
+                            Se entendió el concepto de circuitos básicos y cómo interactuar con Arduino mediante conexiones en una protoboard..</p>
+                        <figure class="mb-4" align="center"><video width="80%"  controls>
+                            <source src="video/resultado2.mp4" type="video/mp4">
+                        </video></p></figure>
+                        <p class="fs-6 mb-4">Ejercicio 3: Conteo con un Display de 7 Segmentos
+                            Se consiguió mostrar correctamente los números del 0 al 2 en un display de 7 segmentos.
+                            Se comprendió cómo encender y apagar múltiples salidas digitales para representar los diferentes números.
+                            Se validó la importancia de las resistencias en cada segmento del display para evitar sobrecarga de corriente.
+                            Se obtuvo un contador funcional que reinicia la secuencia al llegar al número 9, demostrando el uso de bucles y matrices en Arduino.</p>
+                        <figure class="mb-4" align="center"><video width="80%"  controls>
+                            <source src="video/resultado3.mp4" type="video/mp4">
                         </video></p></figure>
 
                         <p id="conclusiones">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Conclusiones -</h2>
-                        <p class="fs-6 mb-4">Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.</p>
-                        <p class="fs-6 mb-4">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>
-                        
+                        <p class="fs-6 mb-4">A través de estos ejercicios, se logró un mejor entendimiento del funcionamiento de Arduino y su programación básica. Se adquirieron habilidades clave para el manejo de salidas digitales, la interacción con componentes electrónicos externos y la construcción de circuitos simples. Estos aprendizajes servirán como base para proyectos más avanzados en el futuro.</p>
 
                         <p id="referencias">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Referencias -</h2>
-                        <p class="fs-6 mb-4">Microchip AVR® microcontroller primer: programming and interfacing, third edition (synthesis lectures on digital circuits and systems), BARRETT, Steven F. Pack Daniel J., Editorial Morgan & Claypool, 2019.</p>
-                        <p class="fs-6 mb-4">K. He, X. Zhang, S. Ren and J. Sun, "Deep Residual Learning for Image Recognition," 2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR), Las Vegas, NV, USA, 2016, pp. 770-778, doi: 10.1109/CVPR.2016.90.</p>
-                        <p class="fs-6 mb-4">J. D. Hunter, "Matplotlib: A 2D Graphics Environment," in Computing in Science & Engineering, vol. 9, no. 3, pp. 90-95, May-June 2007, doi: 10.1109/MCSE.2007.55.</p>
+                        <p class="fs-6 mb-4">Xataka. (s.f.). Qué es Arduino, cómo funciona y qué puedes hacer con uno. Xataka. Recuperado de https://www.xataka.com/basics/que-arduino-como-funciona-que-puedes-hacer-uno.</p>
                         
                         <p id="descargables">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Descargables -</h2>
-                        <p class="fs-6 mb-4">Descargar documento PDF: <a href="files/Documento.pdf">documento.pdf</a> </p>
-                        <p class="fs-6 mb-4">Descargar codigo Arduino: <a href="files/Ejemplo_arduino_bluetooth.ino">codigo.ino</a> </p>
-                        <p class="fs-6 mb-4">Descargar Archivo 3d .STL: <a href="files/Pieza_3D.STL">pieza.stl</a> </p>
+                        <p class="fs-6 mb-4">Descargar documento PDF: <a href="files/Circuitos.pdf">documento.pdf</a> </p>
+                        <p class="fs-6 mb-4">Descargar codigo Arduino: <a href="files/LED_Externo/LED_Externo.ino">codigo.ino</a> </p>
+                        <p class="fs-6 mb-4">Descargar codigo Arduino: <a href="files/LED_Include/LED_Include.ino">codigo.ino</a> </p>                        
 
                 </div>
             </section>

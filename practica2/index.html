@@ -178,9 +178,36 @@
                         <p id="resultados">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
                         <p class="fs-6 mb-4">Ejercicio 1</p>
-                        <p class="fs-6 mb-4"></p>
+                        <p class="fs-6 mb-4">Configuración de los pines:
+                            El LED está conectado al pin 13 y configurado como salida (OUTPUT).
+                            El botón está conectado al pin 2 y configurado como entrada con resistencia pull-up (INPUT_PULLUP).
+                            Estado del botón:
+                            En loop(), se usa digitalRead(buttonPin) para leer si el botón está presionado o no.
+                            Como usamos INPUT_PULLUP, el botón estará en:
+                            HIGH (1) cuando NO está presionado.
+                            LOW (0) cuando se presiona (porque se conecta a GND).
+                            Control del LED:
+                            Si buttonState == LOW (botón presionado), el código enciende el LED (digitalWrite(ledPin, HIGH)).
+                            Si buttonState == HIGH (botón NO presionado), el código apaga el LED (digitalWrite(ledPin, LOW)).</p>
                         <figure class="mb-4" align="center"><video width="60%"  controls>
-                            <source src="video/Robot.mp4" type="video/mp4">
+                            <source src="video/1Boton.mp4" type="video/mp4">
+                            <p class="fs-6 mb-4">Ejercicio 2</p>
+                        <p class="fs-6 mb-4">Este código permite que, al presionar un botón, los LEDs se enciendan en secuencia uno por uno. Al quinto clic, todos los LEDs se apagan y la secuencia reinicia.
+                            Funcionamiento:
+                            Se usa un solo botón para controlar cuatro LEDs.
+                            Cada vez que se presiona el botón, se enciende un LED adicional.
+                            En el quinto clic, todos los LEDs se apagan y el ciclo vuelve a empezar.
+                            Se usa INPUT_PULLUP para evitar resistencias externas en el botón.</p>
+                        <figure class="mb-4" align="center"><video width="60%"  controls>
+                            <source src="video/Secuencia.mp4" type="video/mp4">
+                            <p class="fs-6 mb-4">Ejercicio 3</p>
+                        <p class="fs-6 mb-4">Este código activa un LED solo cuando ambos botones están en HIGH al mismo tiempo.
+                            Funcionamiento:
+                            Se usan dos botones conectados con INPUT_PULLUP, lo que significa que están en HIGH cuando NO se presionan y en LOW cuando se presionan.
+                            El LED solo se enciende si ambos botones están en HIGH (si ninguno está presionado).
+                            Si alguno o ambos botones están en LOW (presionados), el LED se apaga.</p>
+                        <figure class="mb-4" align="center"><video width="60%"  controls>
+                            <source src="video/2Boton.mp4" type="video/mp4">
                         </video></p></figure>
 
                         <p id="conclusiones">
@@ -201,9 +228,9 @@
                         
                         <p id="descargables">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Descargables -</h2>
-                        <p class="fs-6 mb-4">Descargar documento PDF: <a href="files/Documento.pdf">documento.pdf</a> </p>
-                        <p class="fs-6 mb-4">Descargar codigo Arduino: <a href="files/Ejemplo_arduino_bluetooth.ino">codigo.ino</a> </p>
-                        <p class="fs-6 mb-4">Descargar Archivo 3d .STL: <a href="files/Pieza_3D.STL">pieza.stl</a> </p>
+                        <p class="fs-6 mb-4">Descargar codigo Arduino 1 led 1 boton: <a href="files/1_Boton/1_Boton.ino">codigo.ino</a> </p>
+                        <p class="fs-6 mb-4">Descargar codigo Arduino 4 leds 1 boton: <a href="files/Secuancia_de_leds/Secuancia_de_leds.ino">codigo.ino</a> </p>
+                        <p class="fs-6 mb-4">Descargar codigo Arduino 1 led 2 botones: <a href="files/2_Botones/2_Botones.ino">codigo.ino</a> </p>
 
                 </div>
             </section>

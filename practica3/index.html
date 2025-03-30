@@ -78,54 +78,67 @@
                                 
                     <p id="resumen">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Resumen -</h2>
-                        <p class="fs-6 mb-4">Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.</p>
-                        <p class="fs-6 mb-4">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>
+                        <p class="fs-6 mb-4">En esta práctica se exploraron diferentes maneras de controlar servomotores utilizando Arduino. Se realizaron tres ejercicios en los que se probaron movimientos programados y controlados por potenciómetros. Se analizaron los resultados y se evaluó el funcionamiento del sistema mediante una simulación.</p>
                         
                         <p id="intro">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Introducción -</h2>
-                        <p class="fs-6 mb-4">Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.</p>
-                        <p class="fs-6 mb-4">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>
+                        <p class="fs-6 mb-4">Los servomotores son dispositivos ampliamente utilizados en robótica y automatización debido a su capacidad de posicionamiento preciso. En esta práctica, se trabajó con la librería Servo.h de Arduino para controlar el movimiento de uno o más servomotores, tanto de forma programada como mediante la entrada analógica de un potenciómetro.</p>
                         
                         <p id="materiales">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Materiales -</h2>
-                        <p class="fs-6 mb-4">Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.</p>
-                        <p class="fs-6 mb-4">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>
+                        <p class="fs-6 mb-4">Arduino (UNO o similar).
+                            Servomotor,
+                            2 Potenciómetro,
+                            Cables de conexión,
+                            Protoboard,
+                            Fuente de alimentación o conexión USB.</p>
                         
                         <p id="desarrollo">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
-                        <p class="fs-6 mb-4">Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.</p>
-                        <p class="fs-6 mb-4">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>
+                        <p class="fs-6 mb-4">Ejercicio 1: Servomotor con varias posiciones
+                            En este ejercicio se programó un servomotor para que se mueva entre tres posiciones fijas: 0°, 90° y 180°. Cada cambio de posición se realiza con un intervalo de un segundo. Este ejercicio permite observar el comportamiento del servomotor al recibir instrucciones predefinidas sin necesidad de entrada analógica.</p>
+                        <p class="fs-6 mb-4">Ejercicio 2: Servomotor controlado con un potenciómetro.
+                            En este ejercicio se utiliza un potenciómetro para controlar la posición del servomotor. Se lee el valor analógico del potenciómetro y se convierte a un valor dentro del rango de 0° a 180°, permitiendo que el usuario ajuste la posición del servomotor en tiempo real.</p>
+                        <p class="fs-6 mb-4">Ejercicio 3: Dos servomotores controlados con dos potenciómetros
+                            En este último ejercicio, se incorporan dos servomotores, cada uno controlado por un potenciómetro independiente. Se leen los valores de cada potenciómetro y se convierten en valores dentro del rango de 0° a 180° para controlar el movimiento de los servomotores de manera individual.</p>
                         
                             <p id="simulacion">
                             <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Simulación</h1>
-                            <p class="fs-6 mb-4">Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.</p>
-                            <p class="fs-6 mb-4">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>
-                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/ne555.png" alt="..." /></figure>
-                    
-                            <p id="diseño">
-                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Diseño</h1>
-                            <p class="fs-6 mb-4">Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.</p>
-                            <p class="fs-6 mb-4">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>
+                            <p class="fs-6 mb-4">Simulación del Ejercicio 1
+                            La simulación del primer ejercicio mostró que el servomotor se desplazó correctamente entre las posiciones 0°, 90° y 180° con los tiempos de espera especificados.</p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="200px" src="img/Servo.V.png" alt="..." /></figure>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="200px" src="img/ServoVR.png" alt="..." /></figure>
+                                <p class="fs-6 mb-4">Simulación del Ejercicio 2
+                            Para el segundo ejercicio, se observó que el servomotor respondía de manera continua a los cambios en la posición del potenciómetro, permitiendo un control manual suave.</p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="200px" src="img/Servo1.P.png" alt="..." /></figure>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="200px" src="img/ServoRD.png" alt="..." /></figure>
+                                <p class="fs-6 mb-4">
+                            Simulación del Ejercicio 3
+                            En el tercer ejercicio, ambos servomotores reaccionaron de forma independiente a los valores de sus respectivos potenciómetros, validando la funcionalidad de control dual.</p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="200px" src="img/Servo2.P2.png" alt="..." /></figure>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="200px" src="img/Servo2RD.png" alt="..." /></figure>
                             
-                            <p id="construccion">
-                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Construcción</h1>
-                            <p class="fs-6 mb-4">Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.</p>
-                            <p class="fs-6 mb-4">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>
-                            
-
                         <p id="resultados">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
-                        <p class="fs-6 mb-4">Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.</p>
-                        <p class="fs-6 mb-4">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>
+                        <p class="fs-6 mb-4">Resultados del Ejercicio 1
+                            El servomotor realizó los desplazamientos a las posiciones programadas sin inconvenientes. Esto confirmó el correcto funcionamiento de la librería Servo y la precisión del movimiento.</p>
                         <figure class="mb-4" align="center"><video width="80%"  controls>
-                            <source src="video/Robot.mp4" type="video/mp4">
+                            <source src="video/Servo_V.mp4" type="video/mp4">
+                        
+                            <p class="fs-6 mb-4">Resultados del Ejercicio 2
+                                Se logró controlar la posición del servomotor mediante el potenciómetro, lo que demuestra la relación entre una entrada analógica y la salida digital del servomotor.</p>
+                        <figure class="mb-4" align="center"><video width="80%"  controls>
+                            <source src="video/Servo_Pot1.mp4" type="video/mp4">
+
+                        <p class="fs-6 mb-4">Resultados del Ejercicio 3
+                            Los dos servomotores respondieron de forma independiente y precisa a los cambios de los potenciómetros, validando la capacidad de control de múltiples servomotores mediante entradas analógicas.</p>
+                        <figure class="mb-4" align="center"><video width="80%"  controls>
+                            <source src="video/Servo_Pot2.mp4" type="video/mp4">
                         </video></p></figure>
 
                         <p id="conclusiones">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Conclusiones -</h2>
-                        <p class="fs-6 mb-4">Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe. The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.</p>
-                        <p class="fs-6 mb-4">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>
-                        
+                        <p class="fs-6 mb-4">Se logró el control exitoso de servomotores mediante señales digitales y analógicas. La práctica demostró la importancia de la librería Servo.h y el uso de la función map() para la conversión de valores analógicos a ángulos de movimiento. Este conocimiento es fundamental para aplicaciones en robótica y automatización. Además, se comprobó la viabilidad de controlar múltiples servomotores simultáneamente con entradas analógicas, ampliando las posibilidades de aplicación en proyectos futuros.</p>
 
                         <p id="referencias">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">- Referencias -</h2>
